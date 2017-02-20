@@ -1,0 +1,170 @@
+/*** uncss> filename: dev/styles/main.css ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: Segoe UI, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+  max-width: 61.25rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.hero {
+  background-color: #6441A4;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  color: #f0f0f0;
+  margin-bottom: 0.9375rem;
+}
+
+@media (max-width: 40rem) {
+  .hero {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.40625rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+@media (max-width: 40rem) {
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.9375rem;
+  }
+}
+
+.hero h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.9375rem;
+  font-weight: 100;
+  color: rgba(240, 240, 240, 0.8);
+}
+
+@media (max-width: 40rem) {
+  .hero h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero p {
+  margin-bottom: 0.23438rem;
+}
+
+.hero a {
+  color: #6441A4;
+  padding: 0.05859rem 0.3125rem;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  border-radius: 0.125rem;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.hero a:hover {
+  background-color: #432b6d;
+  color: #f0f0f0;
+}
+
+form {
+  width: 100%;
+}
+
+input,
+select {
+  padding: 0.9375rem;
+  border: 0.0625rem solid #ddd;
+  display: inline-block;
+  margin: 0.46875rem;
+  width: calc( (100%/3) - (0.49603rem));
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 40rem) {
+  input,
+  select {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+input:first-child,
+select {
+  margin: 0;
+}
+
+.btn {
+  padding: 0.9375rem;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  background-color: #6441A4;
+  border: 0.0625rem solid #4e337f;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  text-decoration: none;
+}
+
+#result {
+  background-color: white;
+  padding: 0.9375rem 1.875rem;
+  width: 100%;
+  display: table;
+  border-radius: 0.125rem;
+  box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.875rem;
+  -webkit-transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+#result span {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 1.875rem;
+}
+
+#result h2 {
+  display: table-row;
+  font-weight: 100;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.hidden {
+  visibility: none;
+  opacity: 0;
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+
+.credits {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

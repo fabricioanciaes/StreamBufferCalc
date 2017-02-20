@@ -1,0 +1,171 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+$margin: 15px;
+$font: Segoe UI, Helvetica Neue, sans-serif;
+$font-size: 16px;
+$line-height: 150%;
+$border-radius: 2px;
+
+$primary: #6441A4;
+$success: #9edc69;
+$error: #dc697a;
+
+$btn-default: #f0f0f0;
+
+$text-dark: #333;
+$text-light: #f0f0f0;
+
+$border-color: #ddd;
+$background-card: white;
+$background-body: #ecf0f1;
+
+
+body {
+    background-color: $background-body;
+    font-family: $font;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $text-dark;
+    font-weight:100;
+}
+
+.container {
+    margin:0 auto;
+    display:table;
+    width:100%;
+    max-width:980px;
+    padding-left: $margin;
+    padding-right: $margin;
+}
+
+.hero {
+    background-color: $primary;
+    padding-top: $margin*4;
+    padding-bottom: $margin*4;
+    color: $text-light;
+    margin-bottom: $margin;
+
+    @media (max-width: 640px) {
+        padding-top: $margin*2;
+        padding-bottom: $margin*2;
+    }
+}
+
+.hero h1 {
+    font-size: $font-size * 4;
+    margin-bottom: $margin * 1.5;
+    font-weight:100;
+    line-height: $line-height / 1.5;
+
+    @media (max-width:640px) {
+        font-size: $font-size *3;
+        margin-bottom: $margin;
+    }
+}
+
+.hero h4 {
+    font-size: $font-size * 1.5;
+    margin-bottom: $margin;
+    font-weight:100;
+    color: transparentize($text-light, 0.2);
+
+    @media (max-width:640px) {
+        font-size: $font-size *1.5;
+    }
+}
+
+.hero p {
+    margin-bottom: $margin/4;
+}
+
+.hero a {
+    color: $primary;
+    padding: $margin/16 $margin/3;
+    background-color: $text-light;
+    text-decoration:none;
+    border-radius: $border-radius;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: darken($primary,15%);
+        color: $text-light;
+    }
+}
+form {
+    width:100%;
+}
+
+input, select {
+    padding: $margin;
+    border: 1px solid $border-color;
+    display: inline-block;
+    margin: $margin/2;
+    width: calc( (100%/3) - (#{$margin/1.89}));
+    font-size: $font-size;
+    color: $text-dark;
+
+    @media (max-width:640px) {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+input:first-child, select {
+    margin:0;
+}
+
+.btn {
+    padding: $margin;
+    font-size: $font-size * 1.2;
+    color: $text-light;
+    background-color: $primary;
+    border: 1px solid darken($primary, 10%);
+    width:100%;
+    display:block;
+    text-align: center;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    text-decoration: none;
+}
+
+#result {
+    background-color: $background-card;
+    padding: $margin $margin*2;
+    width:100%;
+    display:table;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+    text-align:center;
+    font-size: $font-size * 3;
+    margin-bottom: $margin *2;
+    transition: all 0.8s cubic-bezier(.55,0,.1,1);
+}
+
+#result span {
+    font-size: $font-size;
+    color: $text-dark;
+    display: block;
+    margin-bottom: $margin * 2;
+}
+
+#result h2 {
+    display:table-row;
+    font-weight:100;
+    color: transparentize($text-dark, 0.2);
+}
+
+.hidden {
+    visibility: none;
+    opacity:0;
+    transform: translateY(-10%);
+}
+
+.credits {
+    font-size: $font-size * 0.8;
+    text-align: center;
+}

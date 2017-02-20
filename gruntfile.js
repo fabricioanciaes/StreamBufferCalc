@@ -161,6 +161,11 @@ module.exports = grunt => {
 
         uncss: {
           dist: {
+            options: {
+              ignore: [
+                /\#result/
+              ],
+            },
             files: {
               '<%= dist.styles %>/main.css': ['<%= dev.site%>/**/*.html']
             }
